@@ -1,0 +1,206 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<title>查看日志</title>
+<link rel="shortcut icon" type="image/x-icon" href="style/images/favicon.png" />
+<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+<link href='http://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="style/css/ie7.css" media="all" />
+<![endif]-->
+<!--[if IE 8]>
+<link rel="stylesheet" type="text/css" href="style/css/ie8.css" media="all" />
+<![endif]-->
+<!--[if IE 9]>
+<link rel="stylesheet" type="text/css" href="style/css/ie9.css" media="all" />
+<![endif]-->
+<script type="text/javascript" src="style/js/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="style/js/ddsmoothmenu.js"></script>
+<script type="text/javascript" src="style/js/jquery.jcarousel.js"></script>
+<script type="text/javascript" src="style/js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="style/js/carousel.js"></script>
+<script type="text/javascript" src="style/js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="style/js/jquery.masonry.min.js"></script>
+<script type="text/javascript" src="style/js/jquery.slickforms.js"></script>
+</head>
+<body>
+<!-- Begin Wrapper -->
+<div id="wrapper">
+	<!-- Begin Sidebar -->
+	<div id="sidebar">
+		 <div id="logo"><a href="index0.html"><img src="style/images/logo.png" alt="Caprice" /></a></div>
+
+		<!-- Begin Menu -->
+		<div id="menu" class="menu-v">
+			<ul>
+				<li><a href="index.html" class="active">Home</a>
+					<!--                    <ul>
+                                            <li><a href="index.html">Home</a></li>
+                                            <li><a href="index2.html">Home w/ Portfolio</a></li>
+                                            <li><a href="index3.html">Home w/ Testimonials</a></li>
+                                        </ul>-->
+				</li>
+				<li><a href="#Linux">Linux搭建服务器</a>
+					<ul>
+						<li><a href="vnc.html">安装VNC</a></li>
+						<li><a href="mountDisk.html">挂载数据盘</a></li>
+						<li><a href="weblogic.html">安装weblogic</a></li>
+						<li><a href="oracle.html">安装oralce</a></li>
+						<li><a href="createOracleInstance.html">oralce创建实例</a></li>
+						<li><a href="history.html">history显示操作时间和用户</a></li>
+						<li><a href="gcc.html">安装gcc和g++并编译运行cpp文件</a></li>
+						<li><a href="searchLogs.html">查看日志常见命令</a></li>
+					</ul>
+				</li>
+				<li><a href="#MyBatis">myBatis基本使用</a>
+					<ul>
+						<li><a href="mybatis-1.html">MyBatis的初步使用</a></li>
+						<li><a href="mybatis-relation.html">MyBatis的关联查询</a></li>
+						<li><a href="mybatis-assemble.html">MyBatis的集合查询</a></li>
+						<li><a href="mybatis-identify.html">MyBatis的鉴别器</a></li>
+						<li><a href="mybatis-if.html">MyBatis动态SQL if的使用</a></li>
+						<li><a href="mybatis-choose.html">MyBatis动态SQL choose和where的使用</a></li>
+						<li><a href="mybatis-set.html">MyBatis动态SQL set 和 trim标记的使用</a></li>
+						<li><a href="mybatis-foreach.html">MyBatis动态SQL foreach用法</a></li>
+					</ul>
+				</li>
+				<li><a href="#Logs">日常问题积累</a>
+					<ul>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/1529050" target="view_window">记录服务器基本漏洞处理</a></li>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/1499241" target="view_window">string密钥转PrivateKey和PublicKey</a></li>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/1491694" target="view_window">pfx、cer证书转pem</a></li>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/1204140" target="view_window">weblogic项目备份及部署重启</a></li>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/1162887" target="view_window">EXCEL计算时间差并制作折线图</a></li>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/1162361" target="view_window">Excel分析数据制作图表简单示例</a></li>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/915365" target="view_window">RSA加密异常</a></li>
+					</ul>
+				</li>
+				<li><a href="#Java">Java笔记</a>
+					<ul>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/1523132" target="view_window">单例模式简单示例与优化</a></li>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/1082913" target="view_window">Swing基本使用</a></li>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/920305" target="view_window">使用FreeMaker生成java代码</a></li>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/917660" target="view_window">关于程序中抛出异常</a></li>
+					</ul>
+				</li>
+				<li><a href="#SQL">SQL</a>
+					<ul>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/915355" target="view_window">Java使用MongoDB</a></li>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/912185" target="view_window">Redis下载安装与基本使用</a></li>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/919031" target="view_window">Oracle存储过程示例</a></li>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/1487013" target="view_window">sequence常用解析</a></li>
+					</ul>
+				</li>
+
+				<li><a href="#Others">其他</a>
+					<ul>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/1504205" target="view_window">JavaScript数组的使用</a></li>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/1499254" target="view_window">使用natapp内网穿透</a></li>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/1490382" target="view_window">第一个微信小程序开发</a></li>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/1486714" target="view_window">简单的DWR使用</a></li>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/916017" target="view_window">Git常用命令</a></li>
+					</ul>
+				</li>
+				<li><a href="http://itmamba.com" target="view_window">Contact Us</a></li>
+			</ul>
+		</div>
+		<!-- End Menu -->
+   
+    
+    <div class="sidebox">
+    <ul class="share">
+    	<li><a href="#"><img src="style/images/icon-rss.png" alt="RSS" /></a></li>
+    	<li><a href="#"><img src="style/images/icon-facebook.png" alt="Facebook" /></a></li>
+    	<li><a href="#"><img src="style/images/icon-twitter.png" alt="Twitter" /></a></li>
+    	<li><a href="#"><img src="style/images/icon-dribbble.png" alt="Dribbble" /></a></li>
+    	<li><a href="#"><img src="style/images/icon-linkedin.png" alt="LinkedIn" /></a></li>
+    </ul>
+    </div>
+
+    
+	</div>
+	<!-- End Sidebar -->
+	
+	<!-- Begin Content -->
+	<div id="content">
+	<h1 class="title">linux常见命令之查看日志</h1>
+	<div class="line"></div>
+	<div class="intro"></div>
+
+		<h3>1、搜索 test.txt 文件里，Version为1.0.0.2 并且 列出后面的数字 ID</h3>
+		<p>grep -o "Version=1.0.0.2&ID=[0-9]\+" test.txt</p>
+		<br>
+		<p>上面的语句操作会列出所有符合的记录，重复的也会列出</p>
+
+		<h3>2、搜索 test.txt 文件里，Version为1.0.0.2 并且 列出后面的数字 ID 并在前显示出现的次数（即统计数量，不重复列出相同的记录）</h3>
+		<p>grep -o "Version=1.0.0.2&ID=[0-9]\+" test.txt| sort |uniq -c</p>
+
+		<h3>3、搜索哪个文件包含某个关键字,使用</h3>
+		<p>grep Version=1.0.0.2&ID=0000 server???_20170606</p>
+
+		<h3>4、搜索关键字并输出关键字所在行的前3行后2行</h3>
+		<p>grep -B3 -A2 Version=1.0.0.2&ID=123123 test.txt</p>
+
+		<h3>5、查看进程</h3>
+		<p>ps -elf | grep server</p>
+
+		<h3>6、查看各日志文件大小</h3>
+		<p>ls  -lht</p>
+		<br>
+		<p>ls -lht test.txt</p>
+
+		<h3>7、使用linux内置编辑器查看编辑日志文件：</h3>
+		<p>编辑  vi test.txt     打开后按 i  进行编辑      ctrl+insert复制    shift+insert粘贴</p>
+		<br>
+		<p>：q!  不保存修改并退出      ：wq！保存修改并退出</p>
+		<br>
+		<p>查看 vim test.txt          /+关键字 进行搜索        n 下一个关键字        N 上一个关键字</p>
+
+		<h3>8、当日志文件比较大时，用vim打开会比较慢，而且显示有颜色的字体，此时用less命令去查看搜索日志</h3>
+		<p>less test.txt</p>
+
+		<h3>8、如果需要从头到尾显示出所有日志  使用  cat test.txt</h3>
+
+		<h3>9、从尾到头则用  tac test.txt</h3>
+
+		<h3>10、需要当日志有新的写入是就显示输出  用 tail -f test.txt</h3>
+
+		<h3>11、显示新写入的前100行   tail -100 test.txt</h3>
+
+
+
+		<h3>12、创建软链接，连接到日志目录，例如：</h3>
+		<p>ln -s /home/weblogic/bea/user_projects/domains/logs /home/weblogic/logs</p>
+
+
+		<h3>13、提取字段：例如提取第三个字段（以逗号为分隔符）</h3>
+
+		<p>grep 'content=' test.txt | awk -F, '{print $3}'</p>
+
+		<h3>14、提取字段：例如提取第三个字段（以波浪号为分隔符）</h3>
+
+		<p>grep 'content=' test.txt | awk -F~ '{print $3}'</p>
+
+		<h3>15、提取字段：例如提取第三个字段（以字符串test为分隔符）</h3>
+
+		<p>grep 'content=' test.txt | awk -F"test" '{print $3}'</p>
+
+		<br>
+		<br>
+		<h3>*以上是我为服务器查询日志的一些常用命令，如果错误之处欢迎指出，如需转载敬请在正文中标注并保留原文/译文链接和作者/译者等信息，谢谢。</h3>
+		<br>
+		<br>
+		<br>
+    <!-- End Slider -->
+
+<!-- End Wrapper -->
+<div class="clear"></div>
+<script type="text/javascript" src="style/js/scripts.js"></script>
+<!--[if !IE]> -->
+<script type="text/javascript" src="style/js/jquery.corner.js"></script>
+<!-- <![endif]-->
+<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>

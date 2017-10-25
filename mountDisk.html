@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<title>挂载数据盘</title>
+<link rel="shortcut icon" type="image/x-icon" href="style/images/favicon.png" />
+<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+<link href='http://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="style/css/ie7.css" media="all" />
+<![endif]-->
+<!--[if IE 8]>
+<link rel="stylesheet" type="text/css" href="style/css/ie8.css" media="all" />
+<![endif]-->
+<!--[if IE 9]>
+<link rel="stylesheet" type="text/css" href="style/css/ie9.css" media="all" />
+<![endif]-->
+<script type="text/javascript" src="style/js/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="style/js/ddsmoothmenu.js"></script>
+<script type="text/javascript" src="style/js/jquery.jcarousel.js"></script>
+<script type="text/javascript" src="style/js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="style/js/carousel.js"></script>
+<script type="text/javascript" src="style/js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="style/js/jquery.masonry.min.js"></script>
+<script type="text/javascript" src="style/js/jquery.slickforms.js"></script>
+</head>
+<body>
+<!-- Begin Wrapper -->
+<div id="wrapper">
+	<!-- Begin Sidebar -->
+	<div id="sidebar">
+		 <div id="logo"><a href="index0.html"><img src="style/images/logo.png" alt="Caprice" /></a></div>
+
+		<!-- Begin Menu -->
+		<div id="menu" class="menu-v">
+			<ul>
+				<li><a href="index.html" class="active">Home</a>
+					<!--                    <ul>
+                                            <li><a href="index.html">Home</a></li>
+                                            <li><a href="index2.html">Home w/ Portfolio</a></li>
+                                            <li><a href="index3.html">Home w/ Testimonials</a></li>
+                                        </ul>-->
+				</li>
+				<li><a href="#Linux">Linux搭建服务器</a>
+					<ul>
+						<li><a href="vnc.html">安装VNC</a></li>
+						<li><a href="mountDisk.html">挂载数据盘</a></li>
+						<li><a href="weblogic.html">安装weblogic</a></li>
+						<li><a href="oracle.html">安装oralce</a></li>
+						<li><a href="createOracleInstance.html">oralce创建实例</a></li>
+						<li><a href="history.html">history显示操作时间和用户</a></li>
+						<li><a href="gcc.html">安装gcc和g++并编译运行cpp文件</a></li>
+						<li><a href="searchLogs.html">查看日志常见命令</a></li>
+					</ul>
+				</li>
+				<li><a href="#MyBatis">myBatis基本使用</a>
+					<ul>
+						<li><a href="mybatis-1.html">MyBatis的初步使用</a></li>
+						<li><a href="mybatis-relation.html">MyBatis的关联查询</a></li>
+						<li><a href="mybatis-assemble.html">MyBatis的集合查询</a></li>
+						<li><a href="mybatis-identify.html">MyBatis的鉴别器</a></li>
+						<li><a href="mybatis-if.html">MyBatis动态SQL if的使用</a></li>
+						<li><a href="mybatis-choose.html">MyBatis动态SQL choose和where的使用</a></li>
+						<li><a href="mybatis-set.html">MyBatis动态SQL set 和 trim标记的使用</a></li>
+						<li><a href="mybatis-foreach.html">MyBatis动态SQL foreach用法</a></li>
+					</ul>
+				</li>
+				<li><a href="#Logs">日常问题积累</a>
+					<ul>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/1529050" target="view_window">记录服务器基本漏洞处理</a></li>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/1499241" target="view_window">string密钥转PrivateKey和PublicKey</a></li>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/1491694" target="view_window">pfx、cer证书转pem</a></li>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/1204140" target="view_window">weblogic项目备份及部署重启</a></li>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/1162887" target="view_window">EXCEL计算时间差并制作折线图</a></li>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/1162361" target="view_window">Excel分析数据制作图表简单示例</a></li>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/915365" target="view_window">RSA加密异常</a></li>
+					</ul>
+				</li>
+				<li><a href="#Java">Java笔记</a>
+					<ul>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/1523132" target="view_window">单例模式简单示例与优化</a></li>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/1082913" target="view_window">Swing基本使用</a></li>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/920305" target="view_window">使用FreeMaker生成java代码</a></li>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/917660" target="view_window">关于程序中抛出异常</a></li>
+					</ul>
+				</li>
+				<li><a href="#SQL">SQL</a>
+					<ul>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/915355" target="view_window">Java使用MongoDB</a></li>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/912185" target="view_window">Redis下载安装与基本使用</a></li>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/919031" target="view_window">Oracle存储过程示例</a></li>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/1487013" target="view_window">sequence常用解析</a></li>
+					</ul>
+				</li>
+
+				<li><a href="#Others">其他</a>
+					<ul>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/1504205" target="view_window">JavaScript数组的使用</a></li>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/1499254" target="view_window">使用natapp内网穿透</a></li>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/1490382" target="view_window">第一个微信小程序开发</a></li>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/1486714" target="view_window">简单的DWR使用</a></li>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/916017" target="view_window">Git常用命令</a></li>
+					</ul>
+				</li>
+				<li><a href="http://itmamba.com" target="view_window">Contact Us</a></li>
+			</ul>
+		</div>
+		<!-- End Menu -->
+    
+    <div class="sidebox">
+    <ul class="share">
+    	<li><a href="#"><img src="style/images/icon-rss.png" alt="RSS" /></a></li>
+    	<li><a href="#"><img src="style/images/icon-facebook.png" alt="Facebook" /></a></li>
+    	<li><a href="#"><img src="style/images/icon-twitter.png" alt="Twitter" /></a></li>
+    	<li><a href="#"><img src="style/images/icon-dribbble.png" alt="Dribbble" /></a></li>
+    	<li><a href="#"><img src="style/images/icon-linkedin.png" alt="LinkedIn" /></a></li>
+    </ul>
+    </div>
+
+    
+	</div>
+	<!-- End Sidebar -->
+	
+	<!-- Begin Content -->
+	<div id="content">
+	<h1 class="title">Linux挂载数据盘</h1>
+	<div class="line"></div>
+	<div class="intro"></div>
+
+		<h3>1、服务器的硬盘分系统盘和数据盘，假设系统盘40G，数据盘500G</h3>
+
+		<br>
+		<h3>2、目录规划并创建</h3>
+		<p>/opt/weblogic                                                                                             系统盘</p>
+		<p>/opt/weblogic/bea/user_projects/domain                                                 数据盘</p>
+		<p>切换到weblogic用户</p>
+		<p>#mkdir -p /opt/weblogic</p>
+		<p>#mkdir -p /opt/weblogic/bea/user_projects/domain</p>
+		<br>
+		<h3>3、数据盘格式化与挂载</h3>
+		<p>*分盘和挂载前注意数据备份</p>
+		<p>使用以下命令：</p>
+		<p># fdisk -l</p>
+		<p>可以看到目前硬盘情况，会列出设备名称，大小，扇区等信息</p>
+		<p>可以看到数据盘 /dev/vdb是没分盘和挂载的 （挂载可以通过  df -h 查看）</p>
+		<br>
+		<p># fdisk /dev/vdb</p>
+		<p>此命令用于分区，执行后会出现</p>
+		<div id="slider">
+			<img src="style/images/mountDisk/mountDisk.jpg" height="119" width="377" alt=""/>
+		</div>
+		<p>输入m  回车  后可以看到选项</p>
+		<p>根据提示把数据盘分为需要的块数，并挂载到指定目录即可（n为新建分区，d为删除分区，比较常用）</p>
+		<br>
+		<p># mkfs.ext4 /dev/vdb1</p>
+		<p>格式化/dev/vdb1分区为ext4</p>
+		<br>
+		<p># mount /dev/vdb1 /opt/weblogic/bea/user_projects/domain</p>
+		<p>挂载数据盘到指定目录，挂载情况可以用 df -h 查看，取消挂载用 unmount  /dev/vdb1或者</p>
+		<p>unmount  /opt/weblogic/bea/user_projects/domain</p>
+		<br>
+		<p>*[fdisk是个相对比较危险的命令，注意分区的时候要选对数据盘。]</p>
+		<h3>***关键的一步： 在/etc/fstab文件加上  (我第一次就是挂载后没加，导致重启系统后挂载目录下的数据被清空)</h3>
+		<p>/dev/vdb1               /opt/weblogic/bea/user_projects/domain  ext4    defaults        0 0</p>
+		<br>
+		<p>以上操作完成后</p>
+		<p>#df -h</p>
+		<p>查看分区挂载情况</p>
+
+		<br>
+		<br>
+		<h3>*以上是我为服务器安装weblogic前的挂载数据盘操作，操作完后记录的，如果错误之处欢迎指出，如需转载敬请在正文中标注并保留原文/译文链接和作者/译者等信息，谢谢。</h3>
+		<br>
+		<br>
+		<br>
+    <!-- End Slider -->
+
+<!-- End Wrapper -->
+<div class="clear"></div>
+<script type="text/javascript" src="style/js/scripts.js"></script>
+<!--[if !IE]> -->
+<script type="text/javascript" src="style/js/jquery.corner.js"></script>
+<!-- <![endif]-->
+<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>

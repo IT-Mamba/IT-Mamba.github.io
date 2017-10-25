@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<title>安装weblogic</title>
+<link rel="shortcut icon" type="image/x-icon" href="style/images/favicon.png" />
+<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+<link href='http://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="style/css/ie7.css" media="all" />
+<![endif]-->
+<!--[if IE 8]>
+<link rel="stylesheet" type="text/css" href="style/css/ie8.css" media="all" />
+<![endif]-->
+<!--[if IE 9]>
+<link rel="stylesheet" type="text/css" href="style/css/ie9.css" media="all" />
+<![endif]-->
+<script type="text/javascript" src="style/js/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="style/js/ddsmoothmenu.js"></script>
+<script type="text/javascript" src="style/js/jquery.jcarousel.js"></script>
+<script type="text/javascript" src="style/js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="style/js/carousel.js"></script>
+<script type="text/javascript" src="style/js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="style/js/jquery.masonry.min.js"></script>
+<script type="text/javascript" src="style/js/jquery.slickforms.js"></script>
+</head>
+<body>
+<!-- Begin Wrapper -->
+<div id="wrapper">
+	<!-- Begin Sidebar -->
+	<div id="sidebar">
+		 <div id="logo"><a href="index0.html"><img src="style/images/logo.png" alt="Caprice" /></a></div>
+
+		<!-- Begin Menu -->
+		<div id="menu" class="menu-v">
+			<ul>
+				<li><a href="index.html" class="active">Home</a>
+					<!--                    <ul>
+                                            <li><a href="index.html">Home</a></li>
+                                            <li><a href="index2.html">Home w/ Portfolio</a></li>
+                                            <li><a href="index3.html">Home w/ Testimonials</a></li>
+                                        </ul>-->
+				</li>
+				<li><a href="#Linux">Linux搭建服务器</a>
+					<ul>
+						<li><a href="vnc.html">安装VNC</a></li>
+						<li><a href="mountDisk.html">挂载数据盘</a></li>
+						<li><a href="weblogic.html">安装weblogic</a></li>
+						<li><a href="oracle.html">安装oralce</a></li>
+						<li><a href="createOracleInstance.html">oralce创建实例</a></li>
+						<li><a href="history.html">history显示操作时间和用户</a></li>
+						<li><a href="gcc.html">安装gcc和g++并编译运行cpp文件</a></li>
+						<li><a href="searchLogs.html">查看日志常见命令</a></li>
+					</ul>
+				</li>
+				<li><a href="#MyBatis">myBatis基本使用</a>
+					<ul>
+						<li><a href="mybatis-1.html">MyBatis的初步使用</a></li>
+						<li><a href="mybatis-relation.html">MyBatis的关联查询</a></li>
+						<li><a href="mybatis-assemble.html">MyBatis的集合查询</a></li>
+						<li><a href="mybatis-identify.html">MyBatis的鉴别器</a></li>
+						<li><a href="mybatis-if.html">MyBatis动态SQL if的使用</a></li>
+						<li><a href="mybatis-choose.html">MyBatis动态SQL choose和where的使用</a></li>
+						<li><a href="mybatis-set.html">MyBatis动态SQL set 和 trim标记的使用</a></li>
+						<li><a href="mybatis-foreach.html">MyBatis动态SQL foreach用法</a></li>
+					</ul>
+				</li>
+				<li><a href="#Logs">日常问题积累</a>
+					<ul>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/1529050" target="view_window">记录服务器基本漏洞处理</a></li>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/1499241" target="view_window">string密钥转PrivateKey和PublicKey</a></li>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/1491694" target="view_window">pfx、cer证书转pem</a></li>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/1204140" target="view_window">weblogic项目备份及部署重启</a></li>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/1162887" target="view_window">EXCEL计算时间差并制作折线图</a></li>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/1162361" target="view_window">Excel分析数据制作图表简单示例</a></li>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/915365" target="view_window">RSA加密异常</a></li>
+					</ul>
+				</li>
+				<li><a href="#Java">Java笔记</a>
+					<ul>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/1523132" target="view_window">单例模式简单示例与优化</a></li>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/1082913" target="view_window">Swing基本使用</a></li>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/920305" target="view_window">使用FreeMaker生成java代码</a></li>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/917660" target="view_window">关于程序中抛出异常</a></li>
+					</ul>
+				</li>
+				<li><a href="#SQL">SQL</a>
+					<ul>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/915355" target="view_window">Java使用MongoDB</a></li>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/912185" target="view_window">Redis下载安装与基本使用</a></li>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/919031" target="view_window">Oracle存储过程示例</a></li>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/1487013" target="view_window">sequence常用解析</a></li>
+					</ul>
+				</li>
+
+				<li><a href="#Others">其他</a>
+					<ul>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/1504205" target="view_window">JavaScript数组的使用</a></li>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/1499254" target="view_window">使用natapp内网穿透</a></li>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/1490382" target="view_window">第一个微信小程序开发</a></li>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/1486714" target="view_window">简单的DWR使用</a></li>
+						<li><a href="https://my.oschina.net/xiaozhiwen/blog/916017" target="view_window">Git常用命令</a></li>
+					</ul>
+				</li>
+				<li><a href="http://itmamba.com" target="view_window">Contact Us</a></li>
+			</ul>
+		</div>
+		<!-- End Menu -->
+   
+    
+    <div class="sidebox">
+    <ul class="share">
+    	<li><a href="#"><img src="style/images/icon-rss.png" alt="RSS" /></a></li>
+    	<li><a href="#"><img src="style/images/icon-facebook.png" alt="Facebook" /></a></li>
+    	<li><a href="#"><img src="style/images/icon-twitter.png" alt="Twitter" /></a></li>
+    	<li><a href="#"><img src="style/images/icon-dribbble.png" alt="Dribbble" /></a></li>
+    	<li><a href="#"><img src="style/images/icon-linkedin.png" alt="LinkedIn" /></a></li>
+    </ul>
+    </div>
+
+    
+	</div>
+	<!-- End Sidebar -->
+	
+	<!-- Begin Content -->
+	<div id="content">
+	<h1 class="title">Linux安装weblogic并创建domain</h1>
+	<div class="line"></div>
+	<div class="intro">Linux下安装weblogic以及创建domain，详情看以下链接</div>
+
+		<a href="https://my.oschina.net/xiaozhiwen/blog/1537458" target="view_window">查看详情</a>
+		<br>
+		<br><br>
+		<br><br>
+		<br>
+		<br>
+		<br>
+		<h3>*以上是我为服务器安装weblogic并创建domain的操作，操作完后记录的，如果错误之处欢迎指出，如需转载敬请在正文中标注并保留原文/译文链接和作者/译者等信息，谢谢。</h3>
+		<br>
+		<br>
+		<br>
+    <!-- End Slider -->
+
+<!-- End Wrapper -->
+<div class="clear"></div>
+<script type="text/javascript" src="style/js/scripts.js"></script>
+<!--[if !IE]> -->
+<script type="text/javascript" src="style/js/jquery.corner.js"></script>
+<!-- <![endif]-->
+<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>

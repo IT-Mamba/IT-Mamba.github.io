@@ -1,0 +1,578 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog of IT-Mamba</title>
+    <link rel="shortcut icon" type="image/x-icon" href="style/images/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="style.css" media="all" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style/css/prettyPhoto.css"  />
+    <link href='http://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" href="style/css/ie7.css" media="all" />
+    <![endif]-->
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="style/css/ie8.css" media="all" />
+    <![endif]-->
+    <!--[if IE 9]>
+    <link rel="stylesheet" type="text/css" href="style/css/ie9.css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" src="style/js/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="style/js/ddsmoothmenu.js"></script>
+    <script type="text/javascript" src="style/js/jquery.jcarousel.js"></script>
+    <script type="text/javascript" src="style/js/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="style/js/carousel.js"></script>
+    <script type="text/javascript" src="style/js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="style/js/jquery.masonry.min.js"></script>
+    <script type="text/javascript" src="style/js/jquery.slickforms.js"></script>
+
+</head>
+<body>
+<!-- Begin Wrapper -->
+<div id="wrapper">
+    <!-- Begin Sidebar -->
+    <div id="sidebar">
+        <div id="logo"><a href="index.html"><img src="style/images/logo.png" alt="Caprice" /></a></div>
+
+        <!-- Begin Menu -->
+        <div id="menu" class="menu-v">
+            <ul>
+                <li><a href="index.html" class="active">Home</a>
+<!--                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index2.html">Home w/ Portfolio</a></li>
+                        <li><a href="index3.html">Home w/ Testimonials</a></li>
+                    </ul>-->
+                </li>
+                <li><a href="#Linux">Linux搭建服务器</a>
+                    <ul>
+                        <li><a href="vnc.html">安装VNC</a></li>
+                        <li><a href="mountDisk.html">挂载数据盘</a></li>
+                        <li><a href="weblogic.html">安装weblogic</a></li>
+                        <li><a href="oracle.html">安装oralce</a></li>
+                        <li><a href="createOracleInstance.html">oralce创建实例</a></li>
+                        <li><a href="history.html">history显示操作时间和用户</a></li>
+                        <li><a href="gcc.html">安装gcc和g++并编译运行cpp文件</a></li>
+                        <li><a href="searchLogs.html">查看日志常见命令</a></li>
+                    </ul>
+                </li>
+                <li><a href="#MyBatis">myBatis基本使用</a>
+                    <ul>
+                        <li><a href="mybatis-1.html">MyBatis的初步使用</a></li>
+                        <li><a href="mybatis-relation.html">MyBatis的关联查询</a></li>
+                        <li><a href="mybatis-assemble.html">MyBatis的集合查询</a></li>
+                        <li><a href="mybatis-identify.html">MyBatis的鉴别器</a></li>
+                        <li><a href="mybatis-if.html">MyBatis动态SQL if的使用</a></li>
+                        <li><a href="mybatis-choose.html">MyBatis动态SQL choose和where的使用</a></li>
+                        <li><a href="mybatis-set.html">MyBatis动态SQL set 和 trim标记的使用</a></li>
+                        <li><a href="mybatis-foreach.html">MyBatis动态SQL foreach用法</a></li>
+                    </ul>
+                </li>
+                <li><a href="#Logs">日常问题积累</a>
+                    <ul>
+                        <li><a href="https://my.oschina.net/xiaozhiwen/blog/1529050" target="view_window">记录服务器基本漏洞处理</a></li>
+                        <li><a href="https://my.oschina.net/xiaozhiwen/blog/1499241" target="view_window">string密钥转PrivateKey和PublicKey</a></li>
+                        <li><a href="https://my.oschina.net/xiaozhiwen/blog/1491694" target="view_window">pfx、cer证书转pem</a></li>
+                        <li><a href="https://my.oschina.net/xiaozhiwen/blog/1204140" target="view_window">weblogic项目备份及部署重启</a></li>
+                        <li><a href="https://my.oschina.net/xiaozhiwen/blog/1162887" target="view_window">EXCEL计算时间差并制作折线图</a></li>
+                        <li><a href="https://my.oschina.net/xiaozhiwen/blog/1162361" target="view_window">Excel分析数据制作图表简单示例</a></li>
+                        <li><a href="https://my.oschina.net/xiaozhiwen/blog/915365" target="view_window">RSA加密异常</a></li>
+                    </ul>
+                </li>
+                <li><a href="#Java">Java笔记</a>
+                <ul>
+                    <li><a href="https://my.oschina.net/xiaozhiwen/blog/1523132" target="view_window">单例模式简单示例与优化</a></li>
+                    <li><a href="https://my.oschina.net/xiaozhiwen/blog/1082913" target="view_window">Swing基本使用</a></li>
+                    <li><a href="https://my.oschina.net/xiaozhiwen/blog/920305" target="view_window">使用FreeMaker生成java代码</a></li>
+                    <li><a href="https://my.oschina.net/xiaozhiwen/blog/917660" target="view_window">关于程序中抛出异常</a></li>
+                </ul>
+            </li>
+                <li><a href="#SQL">SQL</a>
+                    <ul>
+                        <li><a href="https://my.oschina.net/xiaozhiwen/blog/915355" target="view_window">Java使用MongoDB</a></li>
+                        <li><a href="https://my.oschina.net/xiaozhiwen/blog/912185" target="view_window">Redis下载安装与基本使用</a></li>
+                        <li><a href="https://my.oschina.net/xiaozhiwen/blog/919031" target="view_window">Oracle存储过程示例</a></li>
+                        <li><a href="https://my.oschina.net/xiaozhiwen/blog/1487013" target="view_window">sequence常用解析</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#Others">其他</a>
+                    <ul>
+                        <li><a href="https://my.oschina.net/xiaozhiwen/blog/1504205" target="view_window">JavaScript数组的使用</a></li>
+                        <li><a href="https://my.oschina.net/xiaozhiwen/blog/1499254" target="view_window">使用natapp内网穿透</a></li>
+                        <li><a href="https://my.oschina.net/xiaozhiwen/blog/1490382" target="view_window">第一个微信小程序开发</a></li>
+                        <li><a href="https://my.oschina.net/xiaozhiwen/blog/1486714" target="view_window">简单的DWR使用</a></li>
+                        <li><a href="https://my.oschina.net/xiaozhiwen/blog/916017" target="view_window">Git常用命令</a></li>
+                    </ul>
+                </li>
+                <li><a href="http://itmamba.com" target="view_window">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- End Menu -->
+
+
+        <div class="sidebox">
+            <ul class="share">
+                <li><a href="#"><img src="style/images/icon-rss.png" alt="RSS" /></a></li>
+                <li><a href="#"><img src="style/images/icon-facebook.png" alt="Facebook" /></a></li>
+                <li><a href="#"><img src="style/images/icon-twitter.png" alt="Twitter" /></a></li>
+                <li><a href="#"><img src="style/images/icon-dribbble.png" alt="Dribbble" /></a></li>
+                <li><a href="#"><img src="style/images/icon-linkedin.png" alt="LinkedIn" /></a></li>
+            </ul>
+        </div>
+
+
+    </div>
+    <!-- End Sidebar -->
+
+    <!-- Begin Content -->
+    <div id="content">
+        <h1 class="title">Object this = new Blog("IT-Mamba");</h1>
+        <div class="line"></div>
+        <div class="intro">此站点用于记录工作中遇到的问题以及部分学习的笔记，欢迎指出不足之处，共同进步。</div>
+
+
+
+
+        <!-- Begin Portfolio -->
+        <div id="portfolio">
+            <ul id="filtering-nav">
+                <li class="show">Filter:</li>
+                <li><a class="all" href="#all">All</a></li>
+                <li><a class="Linux" href="#Linux">Linux</a></li>
+                <li><a class="MyBatis" href="#MyBatis">MyBatis</a></li>
+                <li><a class="Java" href="#Java">Java</a></li>
+                <li><a class="Logs" href="#Logs">Logs</a></li>
+                <li><a class="SQL" href="#SQL">SQL</a></li>
+                <li><a class="Others" href="#Others">Others</a></li>
+            </ul>
+            <div class="clear"></div>
+            <div class="items">
+                <div class="box col1 Linux">
+                    <div>
+                        <h2><a href="vnc.html">Linux安装VNC服务</a></h2>
+                        <p>Oracle 11g 提供了可选的图形化安装方式和静默安装方式，尽管静默安装的方式不需要图形界面的支持，且可以远程化自动化安装，但是在安装过程中极易出现配置问题，所以还是选择图形安装。</p>
+                        <h2><a href="vnc.html" class="button blue">View Details</a></h2>
+                </div>
+                    <div class="right-side">
+
+                    </div>
+                </div>
+                <div class="box col1 Linux">
+                    <div>
+                        <h2><a href="mountDisk.html">Linux挂载数据盘</a></h2>
+                        <p>为服务器安装weblogic前的挂载数据盘操作</p>
+                        <a href="mountDisk.html" class="button blue">View Details</a>
+                    </div>
+                    <div class="right-side">
+
+                    </div>
+                </div>
+                <div class="box col1 Linux">
+                    <div>
+                        <h2><a href="weblogic.html">Linux安装weblogic并创建domain</a></h2>
+                        <p>为服务器安装weblogic并创建domain的操作</p>
+                        <a href="weblogic.html" class="button blue">View Details</a>
+                    </div>
+                    <div class="right-side">
+
+                    </div>
+                </div>
+                <div class="box col1 Linux">
+                    <div>
+                        <h2><a href="oracle.html">Linux安装oracle</a></h2>
+                        <p>为服务器安装oracle11g的操作（使用VNC）</p>
+                        <a href="oracle.html" class="button blue">View Details</a>
+                    </div>
+                    <div class="right-side">
+
+                    </div>
+                </div>
+                <div class="box col1 Linux">
+                    <div>
+                        <h2><a href="createOracleInstance.html">Linux创建oracle实例</a></h2>
+                        <p>为服务器创建oracle实例的操作（使用VNC）</p>
+                        <a href="createOracleInstance.html" class="button blue">View Details</a>
+                    </div>
+                    <div class="right-side">
+
+                    </div>
+                </div>
+                <div class="box col1 Linux">
+                    <div>
+                        <h2><a href="history.html">linux系统history显示操作时间和用户</a></h2>
+                        <p>为服务器history命令显示结果增加显示时间和用户的操作</p>
+                        <a href="history.html" class="button blue">View Details</a>
+                    </div>
+                    <div class="right-side">
+
+                    </div>
+                </div>
+                <div class="box col1 Linux">
+                    <div>
+                        <h2><a href="gcc.html">Linux安装gcc和g++并编译运行cpp文件</a></h2>
+                        <p>为服务器安装gcc和g++并测试编译c++文件的过程</p>
+                        <a href="gcc.html" class="button blue">View Details</a>
+                    </div>
+                    <div class="right-side">
+
+                    </div>
+                </div>
+                <div class="box col1 Linux">
+                    <div>
+                        <h2><a href="searchLogs.html">linux常见命令之查看日志</a></h2>
+                        <p>服务器查询日志的一些常用命令</p>
+                        <a href="searchLogs.html" class="button blue">View Details</a>
+                    </div>
+                    <div class="right-side">
+
+                    </div>
+                </div>
+                <div class="box col1 MyBatis">
+                    <div>
+                        <h2><a href="mybatis-1.html">MyBatis的初步使用</a></h2>
+                        <p>第一次使用MyBatis的操作步骤以及第一个使用mybatis的例子</p>
+                        <a href="mybatis-1.html" class="button blue">View Details</a>
+                    </div>
+                    <div class="right-side">
+
+                    </div>
+                </div>
+                <div class="box col1 MyBatis">
+                    <div>
+                        <h2><a href="mybatis-relation.html">MyBatis关联查询</a></h2>
+                        <p> MyBatis关联查询中的联合查询、构造查询、子查询的示例</p>
+                        <a href="mybatis-relation.html" class="button blue">View Details</a>
+                    </div>
+                    <div class="right-side">
+
+                    </div>
+                </div>
+                <div class="box col1 MyBatis">
+                    <div>
+                        <h2><a href="mybatis-assemble.html">MyBatis集合查询</a></h2>
+                        <p>MyBatis的集合查询示例</p>
+                        <a href="mybatis-assemble.html" class="button blue">View Details</a>
+                    </div>
+                    <div class="right-side">
+
+                    </div>
+                </div>
+                <div class="box col1 MyBatis">
+                    <div>
+                        <h2><a href="mybatis-identify.html">MyBatis鉴别器的使用</a></h2>
+                        <p>MyBatis的鉴别器的使用示例</p>
+                        <a href="mybatis-identify.html" class="button blue">View Details</a>
+                    </div>
+                    <div class="right-side">
+
+                    </div>
+                </div>
+                <div class="box col1 MyBatis">
+                    <div>
+                        <h2><a href="mybatis-if.html">MyBatis if的使用</a></h2>
+                        <p>MyBatis动态SQL的 if 的 示例</p>
+                        <a href="mybatis-if.html" class="button blue">View Details</a>
+                    </div>
+                    <div class="right-side">
+
+                    </div>
+                </div>
+                <div class="box col1 MyBatis">
+                    <div>
+                        <h2><a href="mybatis-choose.html">MyBatis choose和where的使用</a></h2>
+                        <p> MyBatis动态SQL的choose和where的示例</p>
+                        <a href="mybatis-choose.html" class="button blue">View Details</a>
+                    </div>
+                    <div class="right-side">
+
+                    </div>
+                </div>
+                <div class="box col1 MyBatis">
+                    <div>
+                        <h2><a href="mybatis-set.html">MyBatis set和trim的使用</a></h2>
+                        <p>MyBatis动态SQL中 set 和 trim标记的示例</p>
+                        <a href="mybatis-set.html" class="button blue">View Details</a>
+                    </div>
+                    <div class="right-side">
+
+                    </div>
+                </div>
+                <div class="box col1 MyBatis">
+                    <div>
+                        <h2><a href="mybatis-foreach.html">MyBatis foreach的使用</a></h2>
+                        <p>MyBatis动态SQL的foreach循环查询及循环赋值的示例</p>
+                        <a href="mybatis-foreach.html" class="button blue">View Details</a>
+                    </div>
+                    <div class="right-side">
+
+                    </div>
+                </div>
+                <div class="box col1 Logs">
+                    <div>
+                        <h2><a href="https://my.oschina.net/xiaozhiwen/blog/1529050" target="view_window">记录服务器基本漏洞处理</a></h2>
+                        <p>记录初次部署服务器遇到的小漏洞的基本处理</p>
+                        <a href="searchLogs.html" target="view_window" class="button blue">View Details</a>
+                    </div>
+                    <div class="right-side">
+
+                    </div>
+                </div>
+                <div class="box col1 Logs">
+                    <div>
+                        <h2><a href="https://my.oschina.net/xiaozhiwen/blog/1499241" target="view_window">string密钥转PrivateKey和PublicKey</a></h2>
+                        <p>string类型的密钥转换成PrivateKey和PublicKey类型</p>
+                        <a href="https://my.oschina.net/xiaozhiwen/blog/1499241" target="view_window" class="button blue">View Details</a>
+                    </div>
+                    <div class="right-side">
+
+                    </div>
+                </div>
+                <div class="box col1 Logs">
+                    <div>
+                        <h2><a href="https://my.oschina.net/xiaozhiwen/blog/1491694" target="view_window">pfx、cer证书转pem</a></h2>
+                        <p>pfx、cer证书转换成pem格式的文件(直接文本打开获取key的值)</p>
+                        <a href="https://my.oschina.net/xiaozhiwen/blog/1491694" target="view_window" class="button blue">View Details</a>
+                    </div>
+                    <div class="right-side">
+
+                    </div>
+                </div>
+                <div class="box col1 Logs">
+                    <div>
+                        <h2><a href="https://my.oschina.net/xiaozhiwen/blog/1204140" target="view_window">备份及部署重启</a></h2>
+                        <p>备份项目以及部署和重启(linux+weblogic)</p>
+                        <a href="https://my.oschina.net/xiaozhiwen/blog/1204140" target="view_window" class="button blue">View Details</a>
+                    </div>
+                    <div class="right-side">
+
+                    </div>
+                </div>
+                <div class="box col1 Logs">
+                    <div>
+                        <h2><a href="https://my.oschina.net/xiaozhiwen/blog/1162887" target="view_window">EXCEL计算时间差并制作折线图</a></h2>
+                        <p>使用EXCEL计算两列时间的时间差并制作折线图</p>
+                        <a href="https://my.oschina.net/xiaozhiwen/blog/1162887" target="view_window" class="button blue">View Details</a>
+                    </div>
+                    <div class="right-side">
+
+                    </div>
+                </div>
+                <div class="box col1 Logs">
+                    <div>
+                        <h2><a href="https://my.oschina.net/xiaozhiwen/blog/1162361" target="view_window">Excel分析数据制作图表简单示例</a></h2>
+                        <p>Excel分析数据并制作图表的简单示例</p>
+                        <a href="https://my.oschina.net/xiaozhiwen/blog/1162361" target="view_window" class="button blue">View Details</a>
+                    </div>
+                    <div class="right-side">
+
+                    </div>
+                </div>
+                <div class="box col1 Java">
+                    <div>
+                        <h2><a href="https://my.oschina.net/xiaozhiwen/blog/915365" target="view_window">Java使用RSA加密异常</a></h2>
+                        <p>Java使用RSA加密异常：java.security.InvalidKeyException: Illegal key size</p>
+                        <a href="https://my.oschina.net/xiaozhiwen/blog/915365" target="view_window" class="button blue">View Details</a>
+                    </div>
+                    <div class="right-side">
+
+                    </div>
+                </div>
+                <div class="box col1 Java">
+                    <div>
+                        <h2><a href="https://my.oschina.net/xiaozhiwen/blog/1523132" target="view_window">单例模式简单示例与优化</a></h2>
+                        <p>单例模式的简单示例以及简单优化</p>
+                        <a href="https://my.oschina.net/xiaozhiwen/blog/1523132" target="view_window" class="button blue">View Details</a>
+                    </div>
+                    <div class="right-side">
+
+                    </div>
+                </div>
+                <div class="box col1 Java">
+                    <div>
+                        <h2><a href="https://my.oschina.net/xiaozhiwen/blog/1082913" target="view_window">Swing基本使用</a></h2>
+                        <p>Java Swing的基本使用示例</p>
+                        <a href="https://my.oschina.net/xiaozhiwen/blog/1082913" target="view_window" class="button blue">View Details</a>
+                    </div>
+                    <div class="right-side">
+
+                    </div>
+                </div>
+                <div class="box col1 Java">
+                    <div>
+                        <h2><a href="https://my.oschina.net/xiaozhiwen/blog/920305" target="view_window">使用FreeMaker生成java代码</a></h2>
+                        <p>使用FreeMaker生成java代码(简单好用，降低重复代码生成的出错率)</p>
+                        <a href="https://my.oschina.net/xiaozhiwen/blog/920305" target="view_window" class="button blue">View Details</a>
+                    </div>
+                    <div class="right-side">
+
+                    </div>
+                </div>
+                <div class="box col1 Java">
+                    <div>
+                        <h2><a href="https://my.oschina.net/xiaozhiwen/blog/917660" target="view_window">关于程序中抛出异常</a></h2>
+                        <p>程序中抛出异常(向上抛出和向下抛出)</p>
+                        <a href="https://my.oschina.net/xiaozhiwen/blog/917660" target="view_window" class="button blue">View Details</a>
+                    </div>
+                    <div class="right-side">
+
+                    </div>
+                </div>
+                <div class="box col1 SQL">
+                    <div>
+                        <h2><a href="https://my.oschina.net/xiaozhiwen/blog/915355" target="view_window">Java使用MongoDB简单操作</a></h2>
+                        <p>Java使用MongoDB并使用 Robomongo 可视化工具连接MongoDB的示例操作</p>
+                        <a href="https://my.oschina.net/xiaozhiwen/blog/915355" target="view_window" class="button blue">View Details</a>
+                    </div>
+                    <div class="right-side">
+
+                    </div>
+                </div>
+                <div class="box col1 SQL">
+                    <div>
+                        <h2><a href="https://my.oschina.net/xiaozhiwen/blog/912185" target="view_window">Redis下载安装与基本使用</a></h2>
+                        <p>在linux服务器下载安装Redis并基本使用</p>
+                        <a href="https://my.oschina.net/xiaozhiwen/blog/912185" target="view_window" class="button blue">View Details</a>
+                    </div>
+                    <div class="right-side">
+
+                    </div>
+                </div>
+                <div class="box col1 SQL">
+                    <div>
+                        <h2><a href="https://my.oschina.net/xiaozhiwen/blog/919031" target="view_window">Oracle存储过程示例</a></h2>
+                        <p>简单的Oracle存储过程示例</p>
+                        <a href="https://my.oschina.net/xiaozhiwen/blog/919031" target="view_window" class="button blue">View Details</a>
+                    </div>
+                    <div class="right-side">
+
+                    </div>
+                </div>
+                <div class="box col1 SQL">
+                    <div>
+                        <h2><a href="https://my.oschina.net/xiaozhiwen/blog/1487013" target="view_window">sequence常用解析</a></h2>
+                        <p>sequence常见属性的简单解析</p>
+                        <a href="https://my.oschina.net/xiaozhiwen/blog/1487013" target="view_window" class="button blue">View Details</a>
+                    </div>
+                    <div class="right-side">
+
+                    </div>
+                </div>
+                <div class="box col1 Others">
+                    <div>
+                        <h2><a href="https://my.oschina.net/xiaozhiwen/blog/1504205" target="view_window">JavaScript数组的使用</a></h2>
+                        <p>JavaScript数组的三种使用示例</p>
+                        <a href="https://my.oschina.net/xiaozhiwen/blog/1504205" target="view_window" class="button blue">View Details</a>
+                    </div>
+                    <div class="right-side">
+
+                    </div>
+                </div>
+                <div class="box col1 Others">
+                    <div>
+                        <h2><a href="https://my.oschina.net/xiaozhiwen/blog/1499254" target="view_window">使用natapp内网穿透</a></h2>
+                        <p>之前使用的花生壳和万维网好像都用不了了，所以最近开始使用natapp来实现内网穿透(包含新建脚本双击直接打开)</p>
+                        <a href="https://my.oschina.net/xiaozhiwen/blog/1499254" target="view_window" class="button blue">View Details</a>
+                    </div>
+                    <div class="right-side">
+
+                    </div>
+                </div>
+                <div class="box col1 Others">
+                    <div>
+                        <h2><a href="https://my.oschina.net/xiaozhiwen/blog/1490382" target="view_window">第一个微信小程序开发</a></h2>
+                        <p>第一个微信小程序开发(包括下载工具和示例文件的介绍)</p>
+                        <a href="https://my.oschina.net/xiaozhiwen/blog/1490382" target="view_window" class="button blue">View Details</a>
+                    </div>
+                    <div class="right-side">
+
+                    </div>
+                </div>
+                <div class="box col1 Others">
+                    <div>
+                        <h2><a href="https://my.oschina.net/xiaozhiwen/blog/1486714" target="view_window">简单的DWR使用</a></h2>
+                        <p>DWR（Direct Web Remoting）是一个用于改善web页面与Java类交互的远程服务器端Ajax开源框架，可以帮助开发人员开发包含AJAX技术的网站。它可以允许在浏览器里的代码使用运行在web服务器上的JAVA函数，就像它就在浏览器里一样。</p>
+                        <a href="https://my.oschina.net/xiaozhiwen/blog/1486714" target="view_window" class="button blue">View Details</a>
+                    </div>
+                    <div class="right-side">
+
+                    </div>
+                </div>
+                <div class="box col1 Others">
+                    <div>
+                        <h2><a href="https://my.oschina.net/xiaozhiwen/blog/916017" target="view_window">Git常用命令</a></h2>
+                        <p>Git常用的命令介绍</p>
+                        <a href="https://my.oschina.net/xiaozhiwen/blog/916017" target="view_window" class="button blue">View Details</a>
+                    </div>
+                    <div class="right-side">
+
+                    </div>
+                </div>
+            </div>
+            <!-- .wrap -->
+        </div>
+        <!-- End Portfolio -->
+
+
+
+        <!-- Begin Footer -->
+    <!--    <div id="footer">
+            <div class="footer-box one-third">
+                <h3>Popular Posts</h3>
+                <ul class="popular-posts">
+                    <li>
+                        <a href="#"><img src="style/images/art/s1.jpg" alt="" /></a>
+                        <h5><a href="#">Dolor Commodo Consectetur</a></h5>
+                        <span>26 Aug 2013 | <a href="#">21 Comments</a></span>
+                    </li>
+
+                    <li>
+                        <a href="#"><img src="style/images/art/s2.jpg" alt="" /></a>
+                        <h5><a href="#">Dolor Commodo Consectetur</a></h5>
+                        <span>26 Aug 2013 | <a href="#">21 Comments</a></span>
+                    </li>
+
+                    <li>
+                        <a href="#"><img src="style/images/art/s3.jpg" alt="" /></a>
+                        <h5><a href="#">Dolor Commodo Consectetur</a></h5>
+                        <span>26 Aug 2013 | <a href="#">21 Comments</a></span>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="footer-box one-third">
+                <h3>About</h3>
+                <p>Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                <p>Lorem Ipsum Dolor Sit
+                    Moon Avenue No:11/21
+                    Planet City, Earth<br>
+                    <br>
+                    <span class="lite1">Fax:</span> +555 797 534 01<br>
+                    <span class="lite1">Tel:</span> +555 636 646 62<br>
+                    <span class="lite1">E-mail:</span> name@domain.com</p>
+
+
+            </div>
+
+            <div class="footer-box one-third last">
+                <h3>Custom Text</h3>
+                <p>Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod. Nulla vitae elit. </p>
+                <p>Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor.</p>
+            </div>
+        </div>-->
+        <!-- End Footer -->
+
+
+    </div>
+    <!-- End Content -->
+
+</div>
+<!-- End Wrapper -->
+<div class="clear"></div>
+<script type="text/javascript" src="style/js/scripts.js"></script>
+<!--[if !IE]> -->
+<script type="text/javascript" src="style/js/jquery.corner.js"></script>
+<!-- <![endif]-->
+<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>
